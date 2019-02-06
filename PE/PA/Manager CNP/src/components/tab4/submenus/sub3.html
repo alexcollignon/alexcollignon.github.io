@@ -1,0 +1,372 @@
+<div class="tab-header"><h4><strong>Superviser les activité du jour<span style="color: #595959"> - Indemnisation</span></strong></h4></div>
+<div class="tab-body">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="thumbnail">
+        <div class="caption">
+          <strong>Filtres</strong>
+        </div>
+        <div style="padding: 15px">
+          <div class="row">
+            <div class="col-sm-4 col-md-4"><p>Visualiser les informations sur:</p></div>
+            <div class="col-sm-4 col-md-4">
+              <select class="form-control">
+                  <option value="one">Toute l'agence</option>
+              </select>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <button style="float: right" class="btn">Valider</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="thumbnail">
+        <div class="caption">
+          <strong>Ressources</strong>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="col-sm-3 col-md-3"><span class="icon-user lgIcon" style=" margin-right: 15px" aria-hidden="true"></span><span style="font-size: 30px; color: #0072ed"><strong>3</strong></span></div>
+            <div class="col-sm-3 col-md-3"><span class="icon-calendar lgIcon" style="margin-right: 15px" aria-hidden="true"></span><span style="padding-right: 50px; border-right: 2px solid #595959; font-size: 30px; color: #0072ed"><strong>1</strong></span></div>
+            <div class="col-sm-3 col-md-3"><p><strong><span style="font-size: 30px">2</span></strong>  <span>autres ressources</p></div>
+            <div class="col-sm-3 col-md-3">
+              <div class="caption">
+                <button style="background-color: transparent" type="button" class="btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                  <span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-sm" role="document">
+                <div style="border-radius: 8px" class="modal-content">
+                  <div style="padding: 15px">
+                    <div class="caption">
+                      <strong>Détail des ressources</strong>
+                    </div>
+                    <div class="row" style="margin-top: 15px">
+                      <div class="col-sm-3 col-md-3"><span class="icon-user lgIcon" style=" margin-right: 15px" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 col-md-3"><span style="font-size: 30px; color: #0072ed"><strong>3</strong></span></div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="row"><strong>Présents</strong></div>
+                        <div class="row">- Jean-Claude Bernard</div>
+                        <div class="row">- Marc Avril</div>
+                        <div class="row">- Isamel Chateau</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px">
+                      <div class="col-sm-3 col-md-3"><span class="icon-calendar lgIcon" style=" margin-right: 15px" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 col-md-3"><span style="font-size: 30px; color: #0072ed"><strong>1</strong></span></div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="row"><strong>Planifiés</strong></div>
+                        <div class="row">- Jean-Claude Bernard</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px;">
+                      <div class="col-sm-3 col-md-3"></div>
+                      <div class="col-sm-3 col-md-3"><span style="font-size: 30px; color: #595959"><strong>2</strong></span></div>
+                      <div class="col-sm-6 col-md-6">
+                        <div class="row"><strong>Présents</strong></div>
+                        <div class="row">- Lola Dubourg</div>
+                        <div class="row">- Antoine Laurent</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <h5 style="color: #595959; margin-bottom: 15px;"><strong>Demande d'allocation</strong></h5>
+        <div class="col-sm-12 col-md-4">
+          <div class="row">
+            <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(157,208,254,1) 0%, rgba(146,161,253,0.7357317927170868) 100%);">
+              <div class="caption">
+                <strong>Traitement de dossiers affectés</strong>
+                <button style="background-color: transparent" type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                  <span class="icon-cron" style="margin-left: 5px" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div style="border-radius: 8px;" class="modal-content">
+                    <div class="modal-body">
+                      <div class="caption">
+                        <strong>Préférences</strong>
+                        <p>Choisissez les DAL que vous souhaitez voir apparraitre
+                        <br /> (3 au minimum et 5 au maximum)</p>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                            <label class="form-check-label" for="defaultCheck7">
+                              DAL ASS
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                            <label class="form-check-label" for="defaultCheck8">
+                              DAL ASS
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                            <label class="form-check-label" for="defaultCheck9">
+                              DAL A8
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                            <label class="form-check-label" for="defaultCheck10">
+                              DAL A8
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                            <label class="form-check-label" for="defaultCheck11">
+                              DAL A10
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                            <label class="form-check-label" for="defaultCheck12">
+                              DAL A10
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                            <label class="form-check-label" for="defaultCheck13">
+                              DAL ASS
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                            <label class="form-check-label" for="defaultCheck13">
+                              DAL ASS
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                      <button type="button" class="btn btn-primary">Valider</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 15px">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 50px">121</span> <br /><u>Activités en stock</u></strong></p></div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="row"><p><strong><span style="font-size: 30px">7</span> DAL A8</strong></p></div>
+                    <div class="row"><p><strong><span style="font-size: 30px">11</span> DAL A10</strong></p></div>
+                    <div class="row"><p><strong><span style="font-size: 30px">12</span> DAL A5</strong></p></div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="row"><p><strong><span style="font-size: 30px">17</span> DAL ASS</strong></p></div>
+                    <div class="row"><p><strong><span style="font-size: 30px">3</span> DAL A6</strong></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(157,208,254,1) 0%, rgba(60,236,180,0.738532913165266) 100%);">
+              <div class="caption">
+                <strong>Affectation de dossiers</strong>
+                <span class="icon-cron" style="margin-left: 5px" aria-hidden="true"></span>
+              </div>
+              <div style="padding: 15px">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 50px">1</span> <br /><u>Activités en stock</u></strong></p></div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="row"><p><strong><span style="font-size: 30px">1</span> DAL A8</strong></p></div>
+                    <div class="row"><p><strong><span style="font-size: 30px">1</span> DAL A10</strong></p></div>
+                  </div>
+                  <div class="col-sm-4 col-md-4">
+                    <div class="row"><p><strong><span style="font-size: 30px">4</span> DAL ASS</strong></p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(157,208,254,1) 0%, rgba(146,161,253,0.7357317927170868) 100%);">
+            <div class="caption">
+              <strong>Traitements de justificatifs</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong><span style="font-size: 50px">12</span> <br /><u>Stock global</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">3</span> Réalisés dans la journée</strong></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">4</span> Nouveaux dans la journée</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(157,208,254,1) 0%, rgba(60,236,180,0.738532913165266) 100%);">
+            <div class="caption">
+              <strong>Aide à la priorisation</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <a href="css/gfx/A&P.png" target="_blank"><p><strong><span style="font-size: 50px">3</span> <br /> DAL à date de dépot de + de 15 jours <br /> <u>(échéance dépassée)</u></strong></p></a>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <p><strong><span style="font-size: 50px">5</span> <br /> DAL non traitées avec ESI planifié</strong></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <p><strong><span style="font-size: 50px">12</span> <br /> DAL en attente de pièces</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <h5 style="color: #595959; margin-bottom: 15px;"><strong>Autres activités</strong></h5>
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Incidents de paiement</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong><span style="font-size: 50px; color: #0072ed">4</span> <br /><u>En stock non attirbués</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">2</span>Nouveaux</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="caption">
+                    <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Liste des trop perçus.xls (98 ko)</u></strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Suivi des dossiers</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong><span style="font-size: 50px; color: #0072ed">15</span> <br /><u>En stock non attribués</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">14</span>Nouveaux</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Validation des paiements</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong><span style="font-size: 50px; color: #0072ed">5</span> <br /><u>En stock non attribués</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">2</span>Nouveaux</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Blocage de l'indemnisation</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong><span style="font-size: 50px; color: #0072ed">15</span> <br /><u>En stock non attribués</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <p><strong><span style="font-size: 30px">14</span>Nouveaux</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pole Emploi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function(){
+      $("#navbar").load("components/layout/navbar/navbar.html");
+      $("#sidebar").load("components/layout/sidebar/sidebar.html");
+      $("#1").load("components/tab1/tab1.html");
+      $("#2").load("components/tab2/tab2.html");
+      $("#40").load("components/tab4/tab4.html");
+        $("#41").load("components/tab4/submenus/sub1.html");
+        $("#42").load("components/tab4/submenus/sub2.html");
+        $("#43").load("components/tab4/submenus/sub3.html");
+      $("#50").load("components/tab5/tab5.html");
+        $("#51").load("components/tab5/submenus/sub1.html");
+        $("#52").load("components/tab5/submenus/sub2.html");
+        $("#53").load("components/tab5/submenus/sub3.html");
+    });
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/theme-pole-emploi.css">
+    <link rel="stylesheet" type="text/css" href="css/map-base.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+  </head>
+  <body>
+    <!-- TOP NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar"></div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- ACCUEIL -->
+      <div role="tabpanel" class="tab-pane active" id="1"></div>
+
+      <!-- ANALYSER LA PERFORMANCE -->
+      <div role="tabpanel" class="tab-pane" id="2"></div>
+
+      <!-- PREVOIR ET PLANIFIER -->
+      <div role="tabpanel" class="tab-pane" id="3">
+        <div class="tab-header"><h4><strong>Prevoir et planifier</strong></h4></div>
+        <div class="tab-body tab3"></div>
+      </div>
+
+      <!-- SUPERVISER LES ACTIVITES DU JOUR -->
+      <div role="tabpanel" class="tab-pane" id="40"></div>
+        <div role="tabpanel" class="tab-pane" id="41"></div>
+        <div role="tabpanel" class="tab-pane" id="42"></div>
+        <div role="tabpanel" class="tab-pane" id="43"></div>
+
+      <!-- SUIVRE LES ACTIVITES REALISEES -->
+      <div role="tabpanel" class="tab-pane" id="50"></div>
+        <div role="tabpanel" class="tab-pane" id="51"></div>
+        <div role="tabpanel" class="tab-pane" id="52"></div>
+        <div role="tabpanel" class="tab-pane" id="53"></div>
+
+    </div>
+  </body>
+</html>

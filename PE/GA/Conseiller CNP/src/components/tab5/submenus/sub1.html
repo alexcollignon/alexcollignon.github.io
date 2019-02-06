@@ -1,0 +1,178 @@
+<script>
+  $("#showHide2").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+  $("#showHide3").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+</script>
+<div class="tab-header"><h4><strong>Suivre les activités réalisées<span style="color: #595959"> - Accueil physique et téléphonique</span></strong></h4></div>
+<div class="tab-body">
+  <div class="col-sm-12 col-md-6">
+    <h5 style="color: #595959; margin-bottom: 15px;"><strong>Les réalisations</strong></h5>
+    <div class="thumbnail">
+      <div class="caption">
+        <strong>Filtres</strong>
+      </div>
+      <div style="padding: 15px">
+        <div class="row">
+          <div class="col-sm-6 col-md-6"><p>Périodicité:</p>
+            <select class="form-control">
+              <option value="one">Jour</option>
+              <option value="two">Semaine glissante</option>
+              <option value="three">Semaine</option>
+              <option value="four">Mois</option>
+            </select>
+          </div>
+          <div class="col-sm-6 col-md-6"><p>Choix de la période:</p>
+            <select class="form-control">
+                <option value="one">Janvier</option>
+                <option value="two">Février</option>
+                <option value="three">Mars</option>
+                <option value="four">Avril</option>
+                <option value="five">Mai</option>
+                <option value="six">Juin</option>
+                <option value="seven">Juillet</option>
+                <option value="eight">Aout</option>
+                <option value="nine">Septembre</option>
+                <option value="ten">Octobre</option>
+                <option value="eleven">Novembre</option>
+                <option value="twelve">Décembre</option>
+            </select>
+            <br />
+            <button style="float: right" class="btn">Valider</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="caption">
+        <strong>Flux physiques</strong>
+      </div>
+      <div style="padding: 15px">
+        <div class="row">
+          <div class="col-sm-6 col-md-6" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>261</strong></span> <br /> Personnes reçues en AIC</p>
+            <button id="showHide2" class="btn" style="background-color: transparent; " type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+              <a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a>
+            </button>
+            <div class="collapse" id="collapseExample5">
+                <img style="margin-top: 15px; width: 400px !important; height: 25Opx !important" src="css/gfx/suivre/accueil/2.png">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>47</strong></span> <br /> Personnes reçues en ARC indemnisation</p>
+            <div class="caption">
+              <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="caption">
+        <strong>Flux téléphonique</strong>
+      </div>
+      <div style="padding: 15px">
+        <div class="row">
+          <div class="col-sm-4 col-md-4" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>71</strong></span> <br /> Appels décrochés 3949 <br /> - file information emploi et formation</p>
+            <button id="showHide3" class="btn" style="background-color: transparent; " type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+              <a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a>
+            </button>
+            <div class="collapse" id="collapseExample6">
+                <img style="margin-top: 15px; width: 400px !important; height: 25Opx !important" src="css/gfx/suivre/accueil/3.png">
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>87</strong></span> <br /> Appels décrochés 3949 <br /> - file information indemnisation</p>
+            <div class="caption">
+              <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>62</strong></span> <br /> Appels décrochés 3995 <br /> - file recrutement</p>
+            <div class="caption">
+              <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="caption">
+        <strong>Rendez-vous</strong>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-md-3" style="text-align: center">
+          <p><span style="font-size: 50px; color: #0072ed"><strong>33</strong></span> <br /> ESI réalisés</p>
+          <div class="caption">
+            <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3" style="text-align: center">
+          <p><span style="font-size: 50px; color: #0072ed"><strong>12</strong></span> <br /> PRV réalisés</p>
+          <div class="caption">
+            <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3" style="text-align: center">
+          <p><span style="font-size: 50px; color: #0072ed"><strong>88</strong></span> <br /> GPF réalisés</p>
+          <div class="caption">
+            <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3" style="text-align: center">
+          <p><span style="font-size: 50px; color: #0072ed"><strong>5</strong></span> <br /> Reunions collectives réalisés</p>
+          <div class="caption">
+            <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="caption">
+        <strong>Personnes reçues</strong>
+      </div>
+      <div style="padding: 15px">
+        <div class="row">
+          <div class="col-sm-12 col-md-12" style="text-align: center">
+            <p><span style="font-size: 50px; color: #0072ed"><strong>7</strong></span> <br /> Autres RDV individuels réalisés</p>
+            <div class="caption">
+              <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <h5 style="color: #595959; margin-bottom: 15px;"><strong>Performance</strong></h5>
+    <div class="thumbnail" style="padding: 15px">
+      <div>
+        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+          <div class="caption">
+            <strong>ICT7 - Taux de premiers paiements dans le délais</strong>
+          </div>
+          <div style="text-align: center"><span style="font-size: 50px"><u><strong>88%</strong></u></span><p>(Période: Mars 2019)</p></div>
+          <div class="caption"><a href="#"><strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span></a></div>
+          <div class="caption">
+            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+          <div class="caption">
+            <strong>ICT9 - Taux de satisfaction concernant les informations obtenues sur les sujets liés à l'indmnisation</strong>
+          </div>
+          <div style="text-align: center"><span style="font-size: 50px"><u><strong>92%</strong></u></span><p>(Période: Mars 2019)</p></div>
+          <div class="caption"><a href="#"><strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span></a></div>
+          <div class="caption">
+            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
