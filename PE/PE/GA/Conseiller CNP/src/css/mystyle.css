@@ -55,6 +55,9 @@ a, a:hover {
   background-color: #ffffff;
   border-left: 3px solid #0072ed;
 } */
+#submenu-1, #submenu-2 {
+  border-left: 3px solid #0072ed;
+}
 
 .sidebar ul li ul li a:hover, .sidebar ul li ul li a:focus  {
   color: #0072ed;
