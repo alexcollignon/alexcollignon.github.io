@@ -1,0 +1,244 @@
+<script>
+  $("#showHide").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+  $("#showHide1").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+</script>
+<div class="tab-header"><h4><strong>Superviser les activités du jour<span style="color: #595959"> - Flux entrants à réponse différée</span></strong></h4></div>
+<div class="tab-body">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="thumbnail">
+        <div class="caption">
+          <strong>Filtres</strong>
+          <div style="padding: 15px">
+            <div class="row">
+              <div class="col-sm-4 col-md-4"><p>Visualiser les informations sur:</p></div>
+              <div class="col-sm-6 col-md-6">
+                <select class="form-control">
+                    <option value="one">Toute l'agence</option>
+                    <option value="one">Jean BOURDIEU</option>
+                </select>
+              </div>
+              <div class="col-sm-2 col-md-2">
+                <button style="float: right" class="btn">Valider</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.7413340336134453) 100%);">
+            <div class="caption">
+              <strong>Message vocal sur flux téléphonique - MEVO</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span> <br /><u>En stock</u></strong></p></div>
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">+ 2</span></strong> <br />Variation de la journée</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>12</strong> Réalisés</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>14</strong> Nouveaux</p></div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-6 col-md-6"><p><strong>1</strong> <span>échéance dépassé</span></p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.7413340336134453) 100%);">
+            <div class="caption">
+              <strong>Fiches escalade</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">39</span> <br /><u>En stock</u></strong></p></div>
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">- 2</span></strong> <br />Variation de la journée</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>34</strong> Réalisés</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>36</strong> Nouveaux</p></div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>14</strong> <span>Non affectées</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>1</strong> <span>En échéance dépassée</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>3</strong> <span>En échéance proche</span></p></div>
+              </div>
+              <div class="caption">
+                <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder à Escalade</u></strong></a>
+              </div>
+              <div style="text-align: center">
+                <button id="showHide" class="btn" style="background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                  <div class="caption" ><a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a></div>
+                </button>
+              </div>
+              <div class="collapse" id="collapseExample4">
+                <table class="table table-striped" style="background-color: #fff; text-align: center; border-radius: 8px; font-size: 8px">
+                  <thead>
+                    <tr>
+                      <td><strong>Famille</strong></td>
+                      <td><strong>Non affectées</strong></td>
+                      <td><strong>Dépassées</strong></td>
+                      <td><strong>En stock</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>IDE</strong></td>
+                      <td><strong>3</strong></td>
+                      <td><strong>18</strong></td>
+                      <td><strong>22</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Placement</strong></td>
+                      <td><strong>1</strong></td>
+                      <td><strong>23</strong></td>
+                      <td><strong>24</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>RAC</strong></td>
+                      <td><strong>8</strong></td>
+                      <td><strong>7</strong></td>
+                      <td><strong>15</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Autres</strong></td>
+                      <td><strong>24</strong></td>
+                      <td><strong>23</strong></td>
+                      <td><strong>47</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.7413340336134453) 100%);">
+            <div class="caption">
+              <strong>Courriels employeur - EPTICA</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">12</span> <br /><u>En stock</u></strong></p></div>
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">- 2</span></strong> <br />Variation de la journée</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>34</strong> Réalisés</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>36</strong> Nouveaux</p></div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>14</strong> <span>Non affectées</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>1</strong> <span>En échéance dépassé</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>3</strong> <span>En échéance proche</span></p></div>
+              </div>
+              <div class="caption">
+                <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder à Eptica</u></strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.7413340336134453) 100%);">
+            <div class="caption">
+              <strong>Réclamations</strong>
+            </div>
+            <div style="padding: 15px">
+              <div class="row">
+                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">29</span> <br /><u>En stock</u></strong></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>34</strong> Réalisés</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>36</strong> Nouveaux</p></div>
+              </div>
+              <hr class="divider" />
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>14</strong> <span>Non affectées</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>1</strong> <span>En échéance dépassé</span></p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12"><p><strong>3</strong> <span>En échéance proche</span></p></div>
+              </div>
+              <div class="caption">
+                <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux Réclamations</u></strong></a>
+              </div>
+              <div style="text-align: center">
+                <button id="showHide1" class="btn" style="background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                  <div class="caption" ><a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a></div>
+                </button>
+              </div>
+              <div class="collapse" id="collapseExample3">
+                <table class="table table-striped" style="background-color: #fff; text-align: center; border-radius: 8px; font-size: 8px">
+                  <thead>
+                    <tr>
+                      <td><strong>Famille</strong></td>
+                      <td><strong>Non affectées</strong></td>
+                      <td><strong>Dépassées</strong></td>
+                      <td><strong>En stock</strong></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Placement</strong></td>
+                      <td><strong>3</strong></td>
+                      <td><strong>18</strong></td>
+                      <td><strong>22</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Indemnisation</strong></td>
+                      <td><strong>1</strong></td>
+                      <td><strong>23</strong></td>
+                      <td><strong>24</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Gestion de la liste</strong></td>
+                      <td><strong>8</strong></td>
+                      <td><strong>7</strong></td>
+                      <td><strong>15</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Aides et mesures</strong></td>
+                      <td><strong>24</strong></td>
+                      <td><strong>23</strong></td>
+                      <td><strong>47</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
