@@ -1,11 +1,19 @@
+<script>
+  $("#showHide10").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+  $("#showHide11").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+</script>
 <div class="tab-header"><h4><strong>Superviser les activités du jour<span style="color: #595959"> - Accueil physique et téléphonique</span></strong></h4></div>
 <div class="tab-body">
   <div class="row">
     <div class="col-sm-12 col-md-12">
       <div class="thumbnail">
         <div class="caption">
-          <button class="btn" style="background-color: transparent" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <span class="icon-filters" aria-hidden="true"></span><strong style="color: #0072ed">Planification de la journée</strong>
+          <button class="btn" id="showHide10" style="background-color: transparent; width: 100%" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="icon-filters" style="float: left" aria-hidden="true"></span><strong style="color: #0072ed; float: left">Planification de la journée</strong><span class="icon-plus-circled lgIcon" style="float: right" aria-hidden="true"></span>
           </button>
           <div class="collapse" id="collapseExample" style="padding: 15px">
             <div class="row">
@@ -115,10 +123,52 @@
                 </div>
                 <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span></strong> <br />Personnes en attente</p></div>
                 <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">13:12</span></strong> <br />Attente moyenne</p></div>
-                <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
+                <div style="text-align: center">
+                  <button id="showHide11" class="btn" style="background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                    <div class="caption"  ><a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a></div>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div style="" class="collapse" id="collapseExample10">
+        <div style="padding: 5px; background-color: #fff; border-radius: 8px; text-align: center; margin-bottom: 15px">
+          <table class="table table-striped" style="background-color: #fff; text-align: center; border-radius: 8px; font-size: 10px">
+            <thead>
+              <tr>
+                <td><strong>Identifiant</strong></td>
+                <td><strong>Nom de la personne</strong></td>
+                <td><strong>Motif de la solicitation</strong></td>
+                <td><strong>Temps d'attente</strong></td>
+                <td><strong>Attente estimée</strong></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>12345678A</strong></td>
+                <td><strong>Bourdieu Jean-Philippe</strong></td>
+                <td><strong>Indus</strong></td>
+                <td><strong>48 min</strong></td>
+                <td><strong>50 min</strong></td>
+              </tr>
+              <tr>
+                <td><strong>12345678A</strong></td>
+                <td><strong>Bourdieu Jean-Philippe</strong></td>
+                <td><strong>Lorem</strong></td>
+                <td><strong>10 min</strong></td>
+                <td><strong>12 min</strong></td>
+              </tr>
+              <tr>
+                <td><strong>12345678A</strong></td>
+                <td><strong>Bourdieu Jean-Philippe</strong></td>
+                <td><strong>Lorem</strong></td>
+                <td><strong>3 min</strong></td>
+                <td><strong>1 min</strong></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="row">
