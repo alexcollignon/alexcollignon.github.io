@@ -49,28 +49,20 @@ body {
 a, a:hover {
   color: #595959;
 }
-/* .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+#sidebar-menu .sidebar-nav-link.active {
   color: #0072ed;
+  background-color: #ffffff;
+  border-left: 3px solid #0072ed;
+}
+#sidebar-menu ul>li>ul{display:none}
+#sidebar-menu ul>li:hover>ul {display:block}
+#sidebar-menu li a.active {
+  color: #0072ed;
+}
+/* .nav-sub-item {
   background-color: #ffffff;
   border-left: 3px solid #0072ed;
 } */
-#submenu-1, #submenu-2 {
-  border-left: 3px solid #0072ed;
-}
-.sidebar ul li ul li a:hover, .sidebar ul li ul li a:focus  {
-  color: #0072ed;
-  background-color: #ffffff;
-  text-decoration: none;
-}
-.nav > li > a:hover {
-  color: #0072ed;
-  background-color: #ffffff;
-}
-.nav > li > a:focus {
-  color: #0072ed;
-  background-color: #ffffff;
-  border-left: 3px solid #0072ed;
-}
 .thumbnailCaption {
   text-align: left;
 }
@@ -87,8 +79,8 @@ a, a:hover {
   border-width: 2px;
   border-color: #fff;
 }
-.lgIcon {
-  font-size: 2em;
+.lgIcon, .lg-icon {
+  font-size: 2em !important;
 }
 .tab-header {
    margin-bottom: 15px;

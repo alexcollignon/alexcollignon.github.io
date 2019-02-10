@@ -1,35 +1,59 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$("#sidebar-menu ul.nav li.with-sub li a").click(function() {
+  $("#sidebar-menu ul.nav li.with-sub li a").removeClass("active");
+  $("#sidebar-menu ul.nav li.without-sub a").removeClass("active");
+  $(this).addClass('active');
+  $("#sidebar-menu ul.nav li.with-sub a.sidebar-nav-link").removeClass("active");
+  $(this).parent().parent().parent().find('a.sidebar-nav-link').addClass('active');
+});
+</script>
+<script>
+$("#sidebar-menu ul.nav li.without-sub a").click(function() {
+  $("#sidebar-menu ul.nav li.without-sub a").removeClass("active");
+  $("#sidebar-menu ul.nav li.with-sub li a").removeClass("active");
+  $("#sidebar-menu ul.nav li.with-sub a.sidebar-nav-link").removeClass("active");
+  $(this).addClass('active');
+});
+</script>
 
-<div class="sidebar">
-  <ul class="nav nav-pills nav-stacked" role="tablist" id="myPill">
-    <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab"><span class="icon-home lgIcon" aria-hidden="true"></span><br />Mon tableau de bord</a></li>
-    <li role="presentation"><a href="#2" role="tab" data-toggle="tab"><span class="icon-wa-infomarche lgIcon" aria-hidden="true"></span><br />Analyser la performance</a></li>
-    <li role="presentation"><a href="#3" role="tab" data-toggle="tab"><span class="icon-calendar lgIcon" aria-hidden="true"></span><br />Prévoir et planifier</a></li>
+<div class="sidebar" id="sidebar-menu">
+  <ul class="nav nav-sidebar">
 
-    <li role="presentation">
-      <a href="#" class="droptab4" data-toggle="collapse" data-target="#submenu-1"><span class="icon-niveau lgIcon" aria-hidden="true"></span> <br /> Superviser les activités du jour <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-      <ul id="submenu-1" class="collapse" style="text-align: left; padding-left: 5px">
-        <li role="presentation" style="height: 35px"><a href="#40" role="tab" data-toggle="tab">Synthèse</a></li>
-          <li role="presentation" style="height: 35px"><a href="#41" role="tab" data-toggle="tab">Accueil physique et téléphonique</a></li>
-          <li role="presentation" style="height: 35px" style="height: 25px"><a href="#42" role="tab" data-toggle="tab">Flux entrants à réponse différée</a></li>
-          <li role="presentation" style="height: 35px"><a href="#43" role="tab" data-toggle="tab">Indemnisation</a></li>
-          <li role="presentation" style="height: 35px"><a href="#" role="tab" data-toggle="tab">Suivi et accompagnement</a></li>
-          <li role="presentation" style="height: 35px" style="height: 25px"><a href="#" role="tab" data-toggle="tab">Formation</a></li>
-          <li role="presentation" style="height: 35px"><a href="#" role="tab" data-toggle="tab">Entreprise</a></li>
+    <li class="sidebar-nav-item without-sub">
+      <a href="#1" class="sidebar-nav-link active" role="tab" data-toggle="tab" ><span class="icon-home lg-icon" aria-hidden="true"></span><br />Mon tableau de bord</a>
+    </li>
+    <li class="sidebar-nav-item without-sub">
+      <a href="#2" class="sidebar-nav-link" role="tab" data-toggle="tab"><span class="icon-wa-infomarche lg-icon" aria-hidden="true"></span><br />Analyser la performance</a>
+    </li>
+    <li class="sidebar-nav-item without-sub">
+      <a href="#3" class="sidebar-nav-link" role="tab" data-toggle="tab"><span class="icon-calendar lg-icon" aria-hidden="true"></span><br />Prévoir et planifier</a>
+    </li>
+
+    <li class="sidebar-nav-item with-sub">
+      <a href="#" class="sidebar-nav-link"><span class="icon-niveau lg-icon" aria-hidden="true"></span> <br /> Superviser les activités du jour</a>
+      <ul class="nav sidebar-nav-sub text-left">
+        <li class="nav-sub-item"><a href="#40" role="tab" data-toggle="tab" class="nav-sub-link">Synthèse</a></li>
+        <li class="nav-sub-item"><a href="#41" role="tab" data-toggle="tab" class="nav-sub-link">Accueil physique et téléphonique</a></li>
+        <li class="nav-sub-item"><a href="#42" role="tab" data-toggle="tab" class="nav-sub-link">Flux entrants à réponse différée</a></li>
+        <li class="nav-sub-item"><a href="#43" role="tab" data-toggle="tab" class="nav-sub-link">Indemnisation</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Suivi et accompagnement</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Formation</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Entreprise</a></li>
       </ul>
     </li>
 
-    <li role="presentation" >
-      <a href="#" class="droptab5" data-toggle="collapse" data-target="#submenu-2"><span class="icon-wa-loupe lgIcon" aria-hidden="true"></span> <br /> Suivre les activités realisées <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-      <ul id="submenu-2" class="collapse" style="text-align: left; padding-left: 5px">
-        <li role="presentation" style="height: 35px"><a href="#50" role="tab" data-toggle="tab">Synthèse</a></li>
-          <li role="presentation" style="height: 35px"><a href="#51" role="tab" data-toggle="tab">Accueil physique et téléphonique</a></li>
-          <li role="presentation" style="height: 35px"><a href="#52" role="tab" data-toggle="tab">Flux entrants à réponse différée</a></li>
-          <li role="presentation" style="height: 35px"><a href="#53" role="tab" data-toggle="tab">Indemnisation</a></li>
-          <li role="presentation" style="height: 35px"><a href="#" role="tab" data-toggle="tab">Suivi et accompagnement</a></li>
-          <li role="presentation" style="height: 35px" style="height: 25px"><a href="#" role="tab" data-toggle="tab">Formation</a></li>
-          <li role="presentation" style="height: 35px"><a href="#" role="tab" data-toggle="tab">Entreprise</a></li>
+    <li class="sidebar-nav-item with-sub">
+      <a href="#" class="sidebar-nav-link"><span class="icon-wa-loupe lg-icon" aria-hidden="true"></span> <br /> Suivre les activités realisées</a>
+      <ul class="nav sidebar-nav-sub text-left">
+        <li class="nav-sub-item"><a href="#50" role="tab" data-toggle="tab" class="nav-sub-link">Synthèse</a></li>
+        <li class="nav-sub-item"><a href="#51" role="tab" data-toggle="tab" class="nav-sub-link">Accueil physique et téléphonique</a></li>
+        <li class="nav-sub-item"><a href="#52" role="tab" data-toggle="tab" class="nav-sub-link">Flux entrants à réponse différée</a></li>
+        <li class="nav-sub-item"><a href="#53" role="tab" data-toggle="tab" class="nav-sub-link">Indemnisation</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Suivi et accompagnement</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Formation</a></li>
+        <li class="nav-sub-item"><a href="#" class="nav-sub-link">Entreprise</a></li>
       </ul>
     </li>
-
   </ul>
 </div>

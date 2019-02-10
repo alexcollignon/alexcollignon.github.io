@@ -6,95 +6,108 @@
     $(this).find('span').toggleClass('icon-remove');
   });
 </script>
-<div class="tab-header"><h4><strong>Superviser les activités du jour<span style="color: #595959"> - Accueil physique et téléphonique</span></strong></h4></div>
-<div class="tab-body">
+
+<div class="container-fluid">
+
   <div class="row">
-    <div class="col-sm-12 col-md-12">
+    <div class="tab-header">
+      <h1 class="tab-title">Superviser les activités du jour<span style="color: #595959"> - Accueil physique et téléphonique</span></h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
       <div class="thumbnail">
-        <div class="caption">
-          <button class="btn" id="showHide10" style="background-color: transparent; width: 100%" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <span class="icon-filters" style="float: left" aria-hidden="true"></span><strong style="color: #0072ed; float: left">Planification de la journée</strong><span class="icon-plus-circled lgIcon" style="float: right" aria-hidden="true"></span>
+          <button class="btn transparent" id="showHide10" style=" width: 100%" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="icon-filters" style="float: left" aria-hidden="true"></span><strong class="primary" style="float: left">Planification de la journée</strong><span class="icon-plus-circled lg-icon" style="float: right" aria-hidden="true"></span>
           </button>
-          <div class="collapse" id="collapseExample" style="padding: 15px">
+          <div class="collapse thumbnail-body" id="collapseExample">
             <div class="row">
-              <div class="col-sm-7 col-md-7">
+              <div class="col-sm-7">
                 <div class="caption"><strong>Rendez-vous de la journée planifiés</strong></div>
-                <div style="padding: 15px">
+                <div class="thumbnail-body">
                   <div class="row">
-                    <div class="col-sm-2 col-md-2">
-                      <div class="row"><span><strong><span style="font-size: 14px; color: #0072ed">30</span> ESI</strong></span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">30</span> Le matin</span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">0</span> L'après-midi</span></div>
+                    <div class="col-sm-2">
+                      <div class="row"><strong><span class="font-s primary">30</span> ESI</strong></div>
+                      <br />
+                      <div class="row"><span class="font-s primary"><strong>30</strong></span> Le matin</div>
+                      <div class="row"><span class="font-s primary"><strong>0</strong></span> L'après-midi</div>
                       <div class="row">
+                        <br />
                         <div class="caption">
-                          <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
+                          <a href="css/gfx/superviser-accueil.png" target="_blank"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-2 col-md-2">
-                      <div class="row"><span><strong><span style="font-size: 14px; color: #0072ed">12</span> PRV</strong></span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">12</span> Le matin</span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">0</span> L'après-midi</span></div>
+                    <div class="col-sm-2">
+                      <div class="row"><strong><span class="font-s primary">12</span> PRV</strong></div>
+                      <br />
+                      <div class="row"><span class="font-s primary"><strong>12</strong></span> Le matin</div>
+                      <div class="row"><span class="font-s primary"><strong>0</strong></span> L'après-midi</div>
                       <div class="row">
+                        <br />
                         <div class="caption">
-                          <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
+                          <a href="css/gfx/superviser-accueil.png" target="_blank"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-5 col-md-5">
+                    <div class="col-sm-5">
                       <div class="row">
-                        <div class="col-sm-6 col-md-6">
-                          <div class="row"><span><strong><span style="font-size: 14px; color: #0072ed">80</span> GPF</strong></span></div>
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">76</span> Physique</span></div>
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">42</span> Le matin</span></div>
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">34</span> L'après-midi</span></div>
-                        </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-sm-6">
+                          <div class="row"><strong><span class="font-s primary">80</span> GPF</strong></div>
                           <br />
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">4</span> Dématérialisés</span></div>
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">4</span> Le matin</span></div>
-                          <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">0</span> L'après-midi</span></div>
+                          <div class="row"><span class="font-s primary"><strong>76</strong></span> Physique</div>
+                          <div class="row"><span class="font-s primary"><strong>42</strong></span> Le matin</div>
+                          <div class="row"><span class="font-s primary"><strong>34</strong></span> L'après-midi</div>
+                        </div>
+                        <div class="col-sm-6">
+                          <br />
+                          <br />
+                          <div class="row"><span class="font-s primary"><strong>4</strong></span> Dématérialisés</div>
+                          <div class="row"><span class="font-s primary"><strong>4</strong></span> Le matin</div>
+                          <div class="row"><span class="font-s primary"><strong>0</strong></span> L'après-midi</div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="caption">
-                          <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
+                        <div class="caption text-center">
+                          <a href="css/gfx/superviser-accueil.png" target="_blank"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-3 col-md-3">
-                      <div class="row"><span><strong><span style="font-size: 14px; color: #0072ed">3</span> Réunions collectives</strong></span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">3</span> Le matin</span></div>
-                      <div class="row"><span><span style="font-size: 14px; color: #0072ed; font-weight: bold">0</span> L'après-midi</span></div>
+                    <div class="col-sm-3">
+                      <div class="row"><strong><span class="font-s primary">3</span> Réunions collectives</strong></div>
+                      <br />
+                      <div class="row"><span class="font-s primary"><strong>3</strong></span> Le matin</div>
+                      <div class="row"><span class="font-s primary"><strong>0</strong></span> L'après-midi</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-5 col-md-5">
+              <div class="col-sm-5">
                 <div class="caption"><strong>Ressources</strong></div>
                 <div>
                   <div class="thumbnail" style="padding: 15px; box-shadow: none; background-color: #F2F2F2">
                     <div class="row">
-                      <div class="col-sm-3 col-md-3"><strong>Flux physiques</strong></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">4</span></strong><span style="margin-left: 15px" class="icon-desktop-screen lgIcon" aria-hidden="true"></span></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">4</span></strong><span style="margin-left: 15px" class="icon-user lgIcon" aria-hidden="true"></span></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">5</span></strong><span style="margin-left: 15px" class="icon-calendar lgIcon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3"><strong>Flux physiques</strong></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">2</span></strong><span style="margin-left: 15px" class="icon-desktop-screen lg-icon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">4</span></strong><span style="margin-left: 15px" class="icon-user lg-icon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">5</span></strong><span style="margin-left: 15px" class="icon-calendar lg-icon" aria-hidden="true"></span></div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-3 col-md-3"><strong>Flux téléphoniques</strong></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">2</span></strong><span style="margin-left: 15px" class="icon-desktop-screen lgIcon" aria-hidden="true"></span></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">2</span></strong><span style="margin-left: 15px" class="icon-user lgIcon" aria-hidden="true"></span></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">2</span></strong><span style="margin-left: 15px" class="icon-calendar lgIcon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3"><strong>Flux téléphoniques</strong></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">2</span></strong><span style="margin-left: 15px" class="icon-desktop-screen lg-icon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">2</span></strong><span style="margin-left: 15px" class="icon-user lg-icon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">2</span></strong><span style="margin-left: 15px" class="icon-calendar lg-icon" aria-hidden="true"></span></div>
                     </div>
                     <div class="row">
-                      <div class="col-sm-3 col-md-3"><strong>Rendez-vous</strong></div>
-                      <div class="col-sm-3 col-md-3"><strong></strong></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">12</span></strong><span style="margin-left: 15px" class="icon-user lgIcon" aria-hidden="true"></span></div>
-                      <div class="col-sm-3 col-md-3"><strong><span style="font-size: 14px; color: #0072ed">15</span></strong><span style="margin-left: 15px" class="icon-calendar lgIcon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3"><strong>Rendez-vous</strong></div>
+                      <div class="col-sm-3 text-center"><strong></strong></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">12</span></strong><span style="margin-left: 15px" class="icon-user lg-icon" aria-hidden="true"></span></div>
+                      <div class="col-sm-3 text-center"><strong><span class="font-s primary">15</span></strong><span style="margin-left: 15px" class="icon-calendar lg-icon" aria-hidden="true"></span></div>
                     </div>
                     <div class="row">
                       <div class="caption">
-                        <a href="#"><span class="icon-link" style="margin-right: 5px; margin-left: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
+                        <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
                       </div>
                     </div>
                   </div>
@@ -102,32 +115,32 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
+
   <div class="row">
     <div class="col-sm-12 col-md-6">
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <p style="color: #595959; margin-bottom: 15px;"><strong>Flux physiques en temps réel</strong></p>
-          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="col-sm-12">
+          <h2 class="thumbnail-title">Flux physiques en temps réel</h2>
+          <div class="thumbnail thumbnail-rose">
             <div class="row">
-              <div class="col-sm-4 col-md-4">
+              <div class="col-sm-4">
                 <div class="caption">
                   <strong>AIC</strong>
                 </div>
-                <p style=" margin-left: 15px; border-right: 2px solid #fff"><strong><span style="font-size: 30px;">95</span></strong> <br />Personnes reçues aujourd'hui</p>
+                <p style=" margin-left: 15px; border-right: 2px solid #fff"><strong><span class="font-m">95</span></strong> <br />Personnes reçues aujourd'hui</p>
               </div>
-              <div class="col-sm-8 col-md-8">
+              <div class="col-sm-8">
                 <div class="caption">
                   <strong>ARC</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">13:12</span></strong> <br />Attente moyenne</p></div>
-                <div style="text-align: center">
-                  <button id="showHide11" class="btn" style="background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
-                    <div class="caption"  ><a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">8</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">13:12</span></strong> <br />Attente moyenne</p></div>
+                <div class="text-center">
+                  <button id="showHide11" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">
+                    <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
                   </button>
                 </div>
               </div>
@@ -135,82 +148,80 @@
           </div>
         </div>
       </div>
-      <div style="" class="collapse" id="collapseExample10">
-        <div style="padding: 5px; background-color: #fff; border-radius: 8px; text-align: center; margin-bottom: 15px">
-          <table class="table table-striped" style="background-color: #fff; text-align: center; border-radius: 8px; font-size: 10px">
-            <thead>
-              <tr>
-                <td><strong>Identifiant</strong></td>
-                <td><strong>Nom de la personne</strong></td>
-                <td><strong>Motif de la solicitation</strong></td>
-                <td><strong>Temps d'attente</strong></td>
-                <td><strong>Attente estimée</strong></td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>12345678A</strong></td>
-                <td><strong>Bourdieu Jean-Philippe</strong></td>
-                <td><strong>Indus</strong></td>
-                <td><strong>48 min</strong></td>
-                <td><strong>50 min</strong></td>
-              </tr>
-              <tr>
-                <td><strong>12345678A</strong></td>
-                <td><strong>Bourdieu Jean-Philippe</strong></td>
-                <td><strong>Lorem</strong></td>
-                <td><strong>10 min</strong></td>
-                <td><strong>12 min</strong></td>
-              </tr>
-              <tr>
-                <td><strong>12345678A</strong></td>
-                <td><strong>Bourdieu Jean-Philippe</strong></td>
-                <td><strong>Lorem</strong></td>
-                <td><strong>3 min</strong></td>
-                <td><strong>1 min</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="collapse" id="collapseExample10">
+        <table class="table table-striped thumbnail text-center font-s">
+          <thead>
+            <tr>
+              <td><strong>Identifiant</strong></td>
+              <td><strong>Nom de la personne</strong></td>
+              <td><strong>Motif de la solicitation</strong></td>
+              <td><strong>Temps d'attente</strong></td>
+              <td><strong>Attente estimée</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>12345678A</strong></td>
+              <td><strong>Bourdieu Jean-Philippe</strong></td>
+              <td><strong>Indus</strong></td>
+              <td><strong>48 min</strong></td>
+              <td><strong>50 min</strong></td>
+            </tr>
+            <tr>
+              <td><strong>87654321A</strong></td>
+              <td><strong>Lecoustey Sabine</strong></td>
+              <td><strong>Lorem</strong></td>
+              <td><strong>10 min</strong></td>
+              <td><strong>12 min</strong></td>
+            </tr>
+            <tr>
+              <td><strong>A81726354</strong></td>
+              <td><strong>Pelicier Marie</strong></td>
+              <td><strong>Lorem</strong></td>
+              <td><strong>3 min</strong></td>
+              <td><strong>1 min</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <p style="color: #595959; margin-bottom: 15px;"><strong>Rendez-vous programmés en temps réel</strong></p>
-          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="col-sm-12">
+          <p class="thumbnail-title"><strong>Rendez-vous programmés en temps réel</strong></p>
+          <div class="thumbnail thumbnail-rose">
             <div class="row">
-              <div class="col-sm-6 col-md-6">
+              <div class="col-sm-6">
                 <div class="caption">
                   <strong>Personnes en attente</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">15</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-6 col-md-6"><p style="border-right: 2px solid #fff"><strong><span style="font-size: 30px">3</span></strong> <br />Personnes non reçues dans les délais</p></div>
-                <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">15</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p style="border-right: 2px solid #fff"><strong><span class="font-m">3</span></strong> <br />Personnes non reçues dans les délais</p></div>
+                <div class="text-center"><button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button></div>
               </div>
-              <div class="col-sm-6 col-md-6">
+              <div class="col-sm-6">
                 <div class="caption">
                   <strong>Réalisation en cours</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">20</span></strong> <br />Rendez-vous en cours</p></div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">22</span></strong> <br />Rendez-vous programmez actuellement</p></div>
-                <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">20</span></strong> <br />Rendez-vous en cours</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">22</span></strong> <br />Rendez-vous programmez actuellement</p></div>
+                <div class="text-center"><button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 col-md-6">
-          <p style="color: #595959; margin-bottom: 15px;"><strong>Réception sans rendez-vous</strong></p>
-          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="col-sm-6">
+          <p class="thumbnail-title"><strong>Réception sans rendez-vous</strong></p>
+          <div class="thumbnail thumbnail-rose">
             <div class="row">
-              <div class="col-sm-12 col-md-12">
+              <div class="col-sm-12">
                 <div class="caption">
                   <strong>Personnes en attente</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">15</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-6 col-md-6"><p><strong>Dont: <br /> 3</strong> Employeurs</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">15</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p><strong>Dont: <br /> 3</strong> Employeurs</p></div>
                 <div class="caption">
-                  <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
+                  <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la liste</u></strong></a>
                 </div>
               </div>
             </div>
@@ -219,21 +230,21 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-6">
-      <p style="color: #595959; margin-bottom: 15px;"><strong>Flux téléphoniques en temps réel</strong></p>
-      <div class="thumbnail" style="padding: 15px">
+      <p class="thumbnail-title"><strong>Flux téléphoniques en temps réel</strong></p>
+      <div class="thumbnail">
         <div class="caption">
           <strong>Personnes en attente</strong>
         </div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="thumbnail thumbnail-rose">
           <div>
             <div class="caption">
               <strong>3949 - File information emploi et formation</strong>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">12</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">4</span></strong> <br />En attente estimée dépassée</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">1:48</span></strong> <br />Attente moyenne</p></div>
+              <div class="col-sm-12">
+                <div class="col-sm-4"><p><strong><span class="font-m">12</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">4</span></strong> <br />En attente estimée dépassée</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">1:48</span></strong> <br />Attente moyenne</p></div>
               </div>
             </div>
           </div>
@@ -242,51 +253,51 @@
               <strong>3949 - File information indemnisation</strong>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">12</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">3</span></strong> <br />En attente estimée dépassée</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">1:02</span></strong> <br />Attente moyenne</p></div>
+              <div class="col-sm-12">
+                <div class="col-sm-4"><p><strong><span class="font-m">12</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">3</span></strong> <br />En attente estimée dépassée</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">1:02</span></strong> <br />Attente moyenne</p></div>
               </div>
             </div>
           </div>
           <div class="caption">
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la console</u></strong></a>
+            <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la console</u></strong></a>
           </div>
         </div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="thumbnail thumbnail-rose">
           <div>
             <div class="caption">
               <strong>3995 - File recrutement</strong>
             </div>
             <div class="row">
-              <div class="col-sm-12 col-md-12">
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">1</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">0</span></strong> <br />En attente estimée dépassée</p></div>
-                <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 30px">0:23</span></strong> <br />Attente moyenne</p></div>
+              <div class="col-sm-12">
+                <div class="col-sm-4"><p><strong><span class="font-m">1</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">0</span></strong> <br />En attente estimée dépassée</p></div>
+                <div class="col-sm-4"><p><strong><span class="font-m">0:23</span></strong> <br />Attente moyenne</p></div>
               </div>
             </div>
           </div>
           <div class="caption">
-            <a href="css/gfx/odigo.png" target="_blank"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la console</u></strong></a>
+            <a href="css/gfx/odigo.png" target="_blank"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la console</u></strong></a>
           </div>
         </div>
         <div class="caption">
-          <strong>Performance</strong><span class="icon-plus-circled lgIcon" style="float: right" aria-hidden="true"></span>
+          <strong>Performance</strong><span class="icon-plus-circled lg-icon" style="float: right" aria-hidden="true"></span>
         </div>
       </div>
-      <div class="thumbnail" style="padding: 15px">
+      <div class="thumbnail">
         <div class="caption">
           <strong>Flux entrants à réponse différée de la journée</strong>
         </div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="thumbnail thumbnail-rose" >
           <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">1</span></strong> <br />Nouvelle fiche cascade</p></div>
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span></strong> <br />Nouvelles réclamations</p></div>
+            <div class="col-sm-6">
+              <div class="col-sm-6"><p><strong><span class="font-m">1</span></strong> <br />Nouvelle fiche cascade</p></div>
+              <div class="col-sm-6"><p><strong><span class="font-m">8</span></strong> <br />Nouvelles réclamations</p></div>
             </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">1</span></strong> <br />Nouveau message vocal sur flux téléphonique (MEVO)</p></div>
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">4</span></strong> <br />Nouveau courriel employeur (EPTICA)</p></div>
+            <div class="col-sm-6">
+              <div class="col-sm-6"><p><strong><span class="font-m">1</span></strong> <br />Nouveau message vocal sur flux téléphonique (MEVO)</p></div>
+              <div class="col-sm-6"><p><strong><span class="font-m">4</span></strong> <br />Nouveau courriel employeur (EPTICA)</p></div>
             </div>
           </div>
           <div class="caption">

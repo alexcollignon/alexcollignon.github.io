@@ -2,119 +2,135 @@
   $("#showHide12").click(function(event) {
     $(this).find('span').toggleClass('icon-remove');
   });
-  $("#showHide13").click(function(event) {
-    $(this).find('span').toggleClass('icon-remove');
-  });
 </script>
-<div class="tab-header"><h4><strong>Analyser la performance</strong></h4></div>
-<div class="tab-body tab2">
-  <div>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="tab-header">
+      <h1 class="tab-title">Analyser la performance</h1>
+    </div>
+  </div>
+
     <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p style="color: #595959; margin-bottom: 15px;"><strong>Feuille de route et dialogue de performance</strong></p>
-        <div class="thumbnail">
-          <div class="caption">
-            <p style="display: inline-block; margin-right: 5px; float: left">Feuille de route marseille Belle de mai.doc</p>
-            <a href="#" style=" margin-right: 35%;"><span class="icon-download" aria-hidden="true"></span></a>
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><p style="display: inline-block;"><strong><u>Outil de négociation des cibles</u></strong></p></a>
-            <p style="float: right;">
-              <a href="#">
-                <span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Actu DDP</u></strong>
-              </a>
-            </p>
+      <h2 class="thumbnail-title">Feuille de route et dialogue de performance</h2>
+      <div class="thumbnail thumbnail-body">
+        <div class="row">
+          <div class="col-sm-6">
+            Feuille de route marseille Belle de mai.doc
+            <a href="#"><span class="icon-download" aria-hidden="true"></span></a>
+          </div>
+          <div class="col-sm-4">
+            <a href="#"><span class="icon-link" aria-hidden="true"></span>
+              <strong><u>Outil de négociation des cibles</u></strong>
+            </a>
+          </div>
+          <div class="col-sm-2">
+            <a href="#">
+              <span class="icon-link" aria-hidden="true"></span><strong><u>Actu DDP</u></strong>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p style="color: #595959; margin-bottom: 15px; float: left"><strong>Les indicateurs prioritaires de l'agence</strong></p>
 
-        <div class="thumbnail" style="padding: 15px; clear: both">
+      <div class="row">
+        <h2 class="thumbnail-title">Les indicateurs prioritaires de l'agence</h2>
+        <div class="thumbnail">
+
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(115,176,255,1) 0%, rgba(156,230,239,0.7441351540616247) 100%);">
+              <div class="thumbnail thumbnail-green" >
                 <div class="caption">
                   <strong>ICT5 - Taux de satisfaction des demandeurs d'emploi concernant le suivi dont ils bénéficient</strong>
                 </div>
-                <div style="text-align: center"><span style="font-size: 50px"><u><strong>87%</strong></u></span><p>(Période: Octobre 2019)</p></div>
-                <div class="caption"><a href="#"><strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span></a></div>
+                <div class="text-center"><span class="font-l"><u><strong>87%</strong></u></span><p>(Période: Octobre 2019)</p></div>
                 <div class="caption">
-                  <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
+                  <button class="btn transparent"><strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span></button>
+                </div>
+                <div class="caption">
+                  <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6">
-              <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+              <div class="thumbnail thumbnail-rose">
                 <div class="caption">
                   <strong>ICT7 - Taux des premiers paiements dans les délais</strong>
                 </div>
-                <div style="text-align: center"><span style="font-size: 50px"><u><strong>88%</strong></u></span><p>(Période: Octobre 2019)</p></div>
+                <div class="text-center"><span class="font-l"><u><strong>88%</strong></u></span><p>(Période: Octobre 2019)</p></div>
                 <div class="caption">
-                  <button id="showHide12" class="btn" style="background-color: transparent" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12">
-                    <strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span>
+                  <button id="showHide12" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12">
+                    <strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span>
                   </button>
                 </div>
-                <div class="collapse" id="collapseExample12" style="padding: 15px">
+                <div class="collapse" id="collapseExample12">
                   <div class="row">
-                    <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">2j 10h 10mn</span></u></strong></p></div>
-                    <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-                    <div class="col-sm-4 col-md-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
+                    <div class="col-sm-4"><a href="css/gfx/ict7.png" target="_blank"><p><strong><u><span class="font-m">2j 10h 10mn</span></u></strong></p></a></div>
+                    <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                    <div class="col-sm-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
                   </div>
                 </div>
                 <div class="caption">
-                  <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
+                  <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-sm-12 col-md-6">
-              <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+              <div class="thumbnail thumbnail-rose" >
                 <div class="caption">
                   <strong>ICT9 - Taux de satisfaction concerntant les informations obtenues sur les sujets liés à l'indemnisation</strong>
                 </div>
-                <div style="text-align: center"><span style="font-size: 50px"><u><strong>91%</strong></u></span><p>(Période: Octobre 2019)</p></div>
-                <div class="caption"><a href="#"><strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span></a></div>
+                <div class="text-center"><span class="font-l"><u><strong>91%</strong></u></span><p>(Période: Octobre 2019)</p></div>
                 <div class="caption">
-                  <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
+                  <button class="btn transparent"><strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span></button>
+                </div>
+                <div class="caption">
+                  <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
                 </div>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6">
-              <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(115,176,255,1) 0%, rgba(156,230,239,0.7441351540616247) 100%);">
+              <div class="thumbnail thumbnail-blue">
                 <div class="caption">
                   <strong>ICT12 - Taux de satisfaction des entreprises vis à vis de leur dernière opération de recrutement</strong>
                 </div>
-                <div style="text-align: center"><span style="font-size: 50px"><u><strong>91%</strong></u></span><p>(Période: Octobre 2019)</p></div>
-                <div class="caption"><a href="#"><strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span></a></div>
+                <div class="text-center"><span class="font-l"><u><strong>91%</strong></u></span><p>(Période: Octobre 2019)</p></div>
                 <div class="caption">
-                  <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
+                  <button class="btn transparent"><strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span></button>
+                </div>
+                <div class="caption">
+                  <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Voir la carte heuristique</u></strong></a>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="row">
-            <div class="caption" style="text-align: right">
-              <a href="css/gfx/SISP.png" target="_blank"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder au portail Sisp</u></strong></a>
+            <div class="caption text-right" >
+              <a href="css/gfx/SISP.png" target="_blank" style="margin-right: 15px;"><span class="icon-link" aria-hidden="true"></span><strong><u>Accéder au portail Sisp</u></strong></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <p><strong>Plans d'action</strong></p>
+              <a href="#">
+                <span class="icon-link" aria-hidden="true"></span><strong><u>Voir les plans d'actions</u></strong>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
-          <div class="caption">
-            <p><strong>Plans d'action</strong></p>
-            <p>
-              <a href="#">
-                <span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Voir les plans d'actions</u></strong>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </div>

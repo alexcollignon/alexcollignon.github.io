@@ -15,139 +15,223 @@
     $(this).find('span').toggleClass('icon-remove');
   });
 </script>
-<div class="tab-header"><h4><strong>Suivre les activités réalisées<span style="color: #595959"> - Indemnisation</span></strong></h4></div>
-<div class="tab-body">
-  <div class="col-sm-12 col-md-6">
-    <p style="color: #595959; margin-bottom: 15px;"><strong>Les réalisations</strong></p>
-    <div class="thumbnail">
-      <div class="caption">
-        <strong>Filtres</strong>
-      </div>
-      <div style="padding: 15px">
-        <div class="row">
-          <div class="col-sm-6 col-md-6" style="border-right: 2px solid #eee">
-            <div class="row">
-              <div class="col-sm12 col-md-12"><p>Périodicité:</p>
-                <select class="form-control">
-                    <option value="one">Mois</option>
-                    <option value="two">Semaine glissante</option>
-                    <option value="three">Semaine</option>
-                    <option value="four">Jour</option>
-                </select>
-              </div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="tab-header">
+      <h1 class="tab-title">Suivre les activités réalisées<span style="color: #595959"> - Indemnisation</span></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <h2 class="thumbnail-title">Les réalisations</h2>
+      <div class="thumbnail">
+        <div class="caption">
+          <strong>Filtres</strong>
+        </div>
+        <div class="thumbnail-body">
+          <div class="row">
+            <div class="col-sm-6">
+                <p>Périodicité:</p>
+                  <select class="form-control">
+                      <option value="one">Mois</option>
+                      <option value="two">Semaine glissante</option>
+                      <option value="three">Semaine</option>
+                      <option value="four">Jour</option>
+                  </select>
+              <br />
+              <p>Choix de la période:</p>
+                  <select class="form-control">
+                    <option value="one">1/01 - 31/01</option>
+                    <option value="two">1/02 - 28/02</option>
+                    <option value="three">1/03 - 31/03</option>
+                    <option value="four">1/04 - 30/04</option>
+                    <option value="five">1/05 - 31/05</option>
+                    <option value="six">1/06 - 30/06</option>
+                    <option value="seven">1/07 - 31/07</option>
+                    <option value="eight">1/08 - 31/08</option>
+                    <option value="nine">1/09 - 30/09</option>
+                    <option value="ten">1/10 - 31/10</option>
+                    <option value="eleven">1/11 - 30/11</option>
+                    <option value="twelve">1/12 - 31/12</option>
+                  </select>
             </div>
-            <br />
-            <div class="row">
-              <div class="col-sm12 col-md-12"><p>Choix de la période:</p>
-                <select class="form-control">
-                  <option value="one">1/01 - 31/01</option>
-                  <option value="two">1/02 - 28/02</option>
-                  <option value="three">1/03 - 31/03</option>
-                  <option value="four">1/04 - 30/04</option>
-                  <option value="five">1/05 - 31/05</option>
-                  <option value="six">1/06 - 30/06</option>
-                  <option value="seven">1/07 - 31/07</option>
-                  <option value="eight">1/08 - 31/08</option>
-                  <option value="nine">1/09 - 30/09</option>
-                  <option value="ten">1/10 - 31/10</option>
-                  <option value="eleven">1/11 - 30/11</option>
-                  <option value="twelve">1/12 - 31/12</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-6"">
-            <div class="caption">Afficher les réalisations:</div>
-            <br />
-            <div class="row">
-              <div class="col-sm12 col-md-12">
-                <div class="form-check">
-                  <input class="form-check-input active" type="checkbox" value="" checked="checked" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    de l'agence
-                  </label>
+            <div class="col-sm-6">
+              <div class="caption">Afficher les réalisations:</div>
+              <br />
+              <div class="row">
+                <div class="col-sm12">
+                  <div class="form-check">
+                    <input class="form-check-input active" type="checkbox" value="" checked="checked" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      de l'agence
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="col-sm12 col-md-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                  <label class="form-check-label" for="defaultCheck2">
-                    mutualisation interne
-                  </label>
+              <br />
+              <div class="row">
+                <div class="col-sm12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      mutualisation interne
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <br />
-            <div class="row">
-              <div class="col-sm12 col-md-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                  <label class="form-check-label" for="defaultCheck3">
-                    mutualisation externe
-                  </label>
+              <br />
+              <div class="row">
+                <div class="col-sm12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                      mutualisation externe
+                    </label>
+                  </div>
                 </div>
               </div>
+              <br />
+              <button style="float: right" class="btn">Valider</button>
             </div>
-            <br />
-            <button style="float: right" class="btn">Valider</button>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <div class="thumbnail">
-          <div class="caption">
-            <strong>Demandes d'allocation</strong>
-          </div>
-          <div style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Demandes d'allocation</strong>
+            </div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-6 text-center">
+                      <p><strong><span class="font-l primary">352</span><br /> DAL traitées sur la période</strong></p>
+                      <p><strong><span class="font-l primary">15</span><br /> Ma contribution</strong></p>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                      <p><strong><span class="font-l primary">152</span><br /> Nouvelles DAL sur la période</strong></p>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
-                  <div class="col-sm-6 col-md-6">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12">
-                        <p><strong><span style="font-size: 50px; color: #0072ed">352</span><br /> DAL traitées sur la période</strong></p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12">
-                        <p><strong><span style="font-size: 50px; color: #0072ed">15</span><br /> Ma contribution</strong></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12">
-                        <p><strong><span style="font-size: 50px; color: #0072ed">152</span><br /> Nouvelles DAL sur la période</strong></p>
+                  <div class="col-sm-6">
+                    <div class="caption text-center">
+                      <button id="showHide5" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
+                        <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
+                      </button>
+                      <br /> <u>Contribution</u>
+                      <div class="collapse" id="collapseExample11">
+                          <img src="css/gfx/suivre/indemnisation/image.png" alt="Répartition de mon volume de DAL traitées">
                       </div>
                     </div>
                   </div>
+                  <div class="col-sm-6">
+                    <div class="caption" style="text-align: center">
+                      <button id="showHide6" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                        <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
+                      </button>
+                      <br /> <u>Flux des DAL</u>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample8">
+        <div class="image-thumbnail">
+          <img src="css/gfx/suivre/indemnisation/1.png" alt="Flux des demandes d'allocations par jour">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Incidents de paiements</strong>
+            </div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>157</strong></span> <br /> Incidents de paiements traités</p>
+                  <div class="row">
+                      <div class="caption">
+                        20 inférieurs à 650€
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="caption">
+                        5 entre 650€ et 1000€
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="caption">
+                        2 supérieurs à 650€
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Suivi de dossiers</strong>
+            </div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>253</strong></span> <br /> Suivis de dossiers réalisés</p>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6 col-md-6">
-                  <div class="caption" style="text-align: center">
-                    <button id="showHide5" class="btn" style="background-color: transparent; " type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
-                      <a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a>
-                    </button>
-                    <br /> <u>Contribution</u>
-                    <div style="padding-left: -5Opx" class="collapse" id="collapseExample11">
-                        <img style="margin-top: 15px; width: 400px !important; height: 25Opx !important" src="css/gfx/suivre/indemnisation/image.png">
-                    </div>
-                  </div>
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>15</strong></span> <br /> Ma contribution</p>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                  <div class="caption" style="text-align: center">
-                    <button id="showHide6" class="btn" style="background-color: transparent; " type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
-                      <a href="#"><span class="icon-plus-circled" style="font-size: 2em" aria-hidden="true"></span></a>
-                    </button>
-                    <br /> <u>Flux des DAL</u>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Validation de paiement</strong>
+            </div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>162</strong></span> <br /> Validation de paiements réalisés</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>15</strong></span> <br /> Ma contribution</p>
 
-                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="thumbnail">
+            <div class="caption">
+              <strong>Blocages de l'indemnisation</strong>
+            </div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>151</strong></span> <br /> Blocages de l'indemnisation réalisés</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <p><span class="font-l primary"><strong>15</strong></span> <br /> Ma contribution</p>
                 </div>
               </div>
             </div>
@@ -155,181 +239,83 @@
         </div>
       </div>
     </div>
-    <div style="" class="collapse" id="collapseExample8">
-      <div style="padding: 5px; background-color: #fff; border-radius: 8px; text-align: center; margin-bottom: 15px">
-        <img style="margin-top: 15px; width: 400px !important; height: 25Opx !important" src="css/gfx/suivre/indemnisation/1.png">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <div class="thumbnail">
-          <div class="caption">
-            <strong>Incidents de paiements</strong>
-          </div>
-          <div style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>157</strong></span> <br /> Incidents de paiements traités</p>
-                <div class="row">
-                    <div class="caption">
-                      20 inférieurs à 650€
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="caption">
-                      5 entre 650€ et 1000€
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="caption">
-                      2 supérieurs à 650€
-                    </div>
-                </div>
-              </div>
+    <div class="col-sm-12 col-md-6">
+      <h2 class="thumbnail-title">Performance</h2>
+      <div class="thumbnail thumbnail-body">
+        <div>
+          <div class="thumbnail thumbnail-blue">
+            <div class="caption">
+              <strong>Présence de verbatil sur la dernière enquête de satisfaction du 12/02/2019</strong>
+            </div>
+            <div class="caption">
+              <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Consulter les résultats de l'enquête</u></strong></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <div class="thumbnail">
-          <div class="caption">
-            <strong>Suivi de dossiers</strong>
-          </div>
-          <div style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>253</strong></span> <br /> Suivis de dossiers réalisés</p>
+        <div>
+          <div class="thumbnail thumbnail-green">
+            <div class="caption">
+              <strong>ICT7 - Taux de premiers paiements dans les délais</strong>
+            </div>
+            <div class="text-center"><span class="font-l"><u><strong>88%</strong></u></span><p>(Période: Mars 2019)</p></div>
+            <div class="caption">
+              <button id="showHide8" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                <strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample1">
+              <div class="row">
+                <div class="col-sm-4"><a href="css/gfx/ict7.png" target="_blank"><p><strong><u><span class="font-m">2j 10h 10mn</span></u></strong></p></a></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>15</strong></span> <br /> Ma contribution</p>
-
-              </div>
+            <div class="caption">
+              <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <div class="thumbnail">
-          <div class="caption">
-            <strong>Validation de paiement</strong>
-          </div>
-          <div style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>162</strong></span> <br /> Validation de paiements réalisés</p>
+        <div>
+          <div class="thumbnail thumbnail-blue">
+            <div class="caption">
+              <strong>ICT9 - Taux de satisfaction concernant les informations obtenues sur les sujets liés à l'indmnisation</strong>
+            </div>
+            <div class="text-center"><span class="font-l"><u><strong>92%</strong></u></span><p>(Période: Mars 2019)</p></div>
+            <div class="caption">
+              <button id="showHide9" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                <strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="collapse" id="collapseExample2">
+              <div class="row">
+                <div class="col-sm-4"><p><strong><u><span class="font-m">20%</span></u></strong></p></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Taux de DE globalement satisfaits de leur inscription en ligne, lors d'un RDV en agence ou par téléphone</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"><p><strong><u><span class="font-m">56,4%</span></u></strong></p></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Taux d'ESI sans DAL décisionnée</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"><p><strong><u><span class="font-m">72%</span></u></strong></p></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>ICT7</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"><p><strong><u><span class="font-m">8</span> jours</u></strong></p></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Taux de DE ayant eu un contract dans le mois suivant leur inscription sur le domaine indemnisation</p></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4"><p><strong><u><span class="font-m">8</span> jours</u></strong></p></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Délai de réponse aux réclamations (7 jours de calendaires)</p></div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>15</strong></span> <br /> Ma contribution</p>
-
-              </div>
+            <div class="caption">
+              <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6">
-        <div class="thumbnail">
-          <div class="caption">
-            <strong>Blocages de l'indemnisation</strong>
-          </div>
-          <div style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>151</strong></span> <br /> Blocages de l'indemnisation réalisés</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-12" style="text-align: center">
-                <p><span style="font-size: 50px; color: #0072ed"><strong>15</strong></span> <br /> Ma contribution</p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6">
-    <p style="color: #595959; margin-bottom: 15px;"><strong>Performance</strong></p>
-    <div class="thumbnail" style="padding: 15px">
-      <div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(115,176,255,1) 0%, rgba(156,230,239,0.7441351540616247) 100%);">
-          <div class="caption">
-            <strong>Présence de verbatil sur la dernière enquête de satisfaction du 12/02/2019</strong>
-          </div>
-          <div class="caption">
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Consulter les résultats de l'enquête</u></strong></a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.68531162464986) 100%);">
-          <div class="caption">
-            <strong>ICT7 - Taux de premiers paiements dans les délais</strong>
-          </div>
-          <div style="text-align: center"><span style="font-size: 50px"><u><strong>88%</strong></u></span><p>(Période: Mars 2019)</p></div>
-          <div class="caption">
-            <button id="showHide8" class="btn" style="background-color: transparent" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-              <strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span>
-            </button>
-          </div>
-          <div class="collapse" id="collapseExample1" style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">2j 10h 10mn</span></u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
-            </div>
-          </div>
-          <div class="caption">
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(115,176,255,1) 0%, rgba(156,230,239,0.7441351540616247) 100%);">
-          <div class="caption">
-            <strong>ICT9 - Taux de satisfaction concernant les informations obtenues sur les sujets liés à l'indmnisation</strong>
-          </div>
-          <div style="text-align: center"><span style="font-size: 50px"><u><strong>92%</strong></u></span><p>(Période: Mars 2019)</p></div>
-          <div class="caption">
-            <button id="showHide9" class="btn" style="background-color: transparent" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-              <strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span>
-            </button>
-          </div>
-          <div class="collapse" id="collapseExample2" style="padding: 15px">
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">20%</span></u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Taux de DE globalement satisfaits de leur inscription en ligne, lors d'un RDV en agence ou par téléphone</p></div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">56,4%</span></u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Taux d'ESI sans DAL décisionnée</p></div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">72%</span></u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>ICT7</p></div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">8</span> jours</u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Taux de DE ayant eu un contract dans le mois suivant leur inscription sur le domaine indemnisation</p></div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">8</span> jours</u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Délai de réponse aux réclamations (7 jours de calendaires)</p></div>
-            </div>
-          </div>
-          <div class="caption">
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
           </div>
         </div>
       </div>

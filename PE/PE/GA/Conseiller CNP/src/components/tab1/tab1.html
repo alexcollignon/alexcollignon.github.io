@@ -1,163 +1,153 @@
-<script type="text/javascript">
-  $(function () {
-    $('[data-toggle="dropdown"]').dropdown()
-  })
+<script>
+  $("#showHide13").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
 </script>
-<div class="tab-header"><h4 style="float: left"><strong>Mon tableau de bord</strong></h4>
-  <div class="dropdown">
-    <button class="btn" style="background-color: transparent;  margin-top: -10px;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span style="color: #595959; margin-left: 5px; font-size: 2em" class="icon-more-hor-m" aria-hidden="true"></span>
-    </button>
-    <ul class="dropdown-menu" style="border-radius: 8px; padding: 10px">
-      <div class="caption"><strong><a href="#">Ajouter un contenu</a></strong></div>
-      <li><a href="#">Analyser la performance</a></li>
-      <li><a href="#">Superviser les activités du jour</a></li>
-      <li><a href="#">Suivre les activités réalisés</a></li>
-      <li><a href="#">Communication</a></li>
-      <div class="caption"><strong><a href="#">Modifier la mise en page</a></strong></div>
-    </ul>
-  </div>
-</div>
+<div class="container-fluid">
 
-<div class="tab-body">
-  <div class="col-sm-12 col-md-6">
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p style="color: #595959; margin-bottom: 15px; "><strong>Superviser les activités du jour - Demande d'allocations</strong></p>
-          <div class="col-sm-12 col-md-12">
-            <div class="row">
-              <div class="thumbnail" style="padding: 15px">
-                <div class="thumbnail" style="box-shadow: none; background: linear-gradient(141deg, rgba(157,208,254,1) 0%, rgba(146,161,253,0.7357317927170868) 100%);">
-                  <div class="caption">
-                    <strong>Affectation de dossiers</strong>
-                  </div>
-                  <div style="padding: 15px">
-                    <div class="row">
-                      <div class="col-sm-4 col-md-4"><p><strong><span style="font-size: 50px">7</span> <br /><u>Activités en stock</u></strong></p></div>
-                      <div class="col-sm-4 col-md-4">
-                        <div class="row"><p><strong><span style="font-size: 30px">1</span> DAL A8</strong></p></div>
-                        <div class="row"><p><strong><span style="font-size: 30px">0</span> DAL A10</strong></p></div>
-                      </div>
-                      <div class="col-sm-4 col-md-4">
-                        <div class="row"><p><strong><span style="font-size: 30px">5</span> DAL ASS</strong></p></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <p style="color: #595959; margin-bottom: 15px;"><strong>Suivre les activités réalisées - Réalisation</strong></p>
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <div class="thumbnail">
-              <div class="caption">
-                <strong>Flux physiques</strong>
-              </div>
-              <div style="padding: 15px">
-                <div class="row">
-                  <div class="col-sm-6 col-md-6" style="text-align: center">
-                    <p><span style="font-size: 50px; color: #0072ed"><strong>261</strong></span> <br /> Personnes reçues en AIC</p>
-                    <div class="caption">
-                      <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6" style="text-align: center">
-                    <p><span style="font-size: 50px; color: #0072ed"><strong>47</strong></span> <br /> Personnes reçues en ARC indemnisation</p>
-                    <div class="caption">
-                      <a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="row">
+    <div class="tab-header">
+      <h1 class="tab-title">Mon tableau de bord</h1>
+      <div class="dropdown">
+        <button class="btn transparent" style="margin-top: -10px" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="icon-more-hor-m lg-icon" aria-hidden="true"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <a href="#"><strong>Ajouter un contenu</strong></a>
+          <li><a href="#">Analyser la performance</a></li>
+          <li><a href="#">Superviser les activités du jour</a></li>
+          <li><a href="#">Suivre les activités réalisés</a></li>
+          <li><a href="#">Communication</a></li>
+          <a href="#"><strong>Modifier la mise en page</strong></a>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="col-sm-12 col-md-6">
-    <div class="row">
-      <p style="color: #595959; margin-bottom: 15px; "><strong>Suivre les activités réalisées - Indemnisation - Performance</strong></p>
-      <div class="thumbnail" style="padding: 15px">
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
-          <div class="caption">
-            <strong>ICT7 - Taux de premiers paiements dans le délais</strong>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+
+        <h2 class="thumbnail-title">Superviser les activités du jour - Demande d'allocations</h2>
+          <div class="thumbnail thumbnail-blue">
+            <div class="caption"><strong>Affectation de dossiers</strong></div>
+            <div class="thumbnail-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <strong><span class="font-l">7</span> <br /><u>Activités en stock</u></strong>
+                </div>
+                <div class="col-sm-4">
+                  <div class="row"><p><strong><span class="font-m">1</span> DAL A8</strong></p></div>
+                  <div class="row"><p><strong><span class="font-m">0</span> DAL A10</strong></p></div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="row"><p><strong><span class="font-m">5</span> DAL ASS</strong></p></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="text-align: center"><span style="font-size: 50px"><u><strong>72%</strong></u></span><p>(Période: Mars 2019)</p></div>
+
+        <h2 class="thumbnail-title">Suivre les activités réalisées - Réalisation</h2>
+        <div class="thumbnail">
           <div class="caption">
-            <button id="showHide13" class="btn" style="background-color: transparent" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13">
-              <strong>Indicateurs d'éclairage</strong><span class="icon-plus-circled" style="margin-left: 5px" aria-hidden="true"></span>
-            </button>
+            <strong>Flux physiques</strong>
           </div>
-          <div class="collapse" id="collapseExample13" style="padding: 15px">
+          <div class="thumbnail-body">
             <div class="row">
-              <div class="col-sm-4 col-md-4"><p><strong><u><span style="font-size: 22px">2j 10h 10mn</span></u></strong></p></div>
-              <div class="col-sm-4 col-md-4"><p><i>Données mars 2019</i></p></div>
-              <div class="col-sm-4 col-md-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
-            </div>
-          </div>
-          <div class="caption">
-            <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <p style="color: #595959; margin-bottom: 15px; "><strong>Superviser les activités du jour - Rendez-vous programmés en temps réel</strong></p>
-      <div class="thumbnail" style="padding: 15px">
-        <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <div class="caption">
-                <strong>Personnes en attente</strong>
+              <div class="col-sm-6 text-center">
+                <p><span class="font-l primary"><strong>261</strong></span> <br /> Personnes reçues en AIC</p>
+                <br />
+                <button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button>
               </div>
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span></strong> <br />Personnes en attente</p></div>
-              <div class="col-sm-6 col-md-6"><p style="border-right: 2px solid #fff"><strong><span style="font-size: 30px">13:12</span></strong> <br />Attente moyenne</p></div>
-              <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
-            </div>
-            <div class="col-sm-6 col-md-6">
-              <div class="caption">
-                <strong>Réalisation en cours</strong>
+              <div class="col-sm-6 text-center">
+                <p><span class="font-l primary"><strong>47</strong></span> <br /> Personnes reçues en ARC indemnisation</p>
+                  <button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button>
               </div>
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">8</span></strong> <br />Personnes en attente</p></div>
-              <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">13:12</span></strong> <br />Attente moyenne</p></div>
-              <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
             </div>
           </div>
         </div>
-      </div>
     </div>
-    <div class="row">
-      <p style="color: #595959; margin-bottom: 15px; "><strong>Liens utiles</strong></p>
-      <div class="thumbnail">
-        <div style="padding: 15px">
-          <div class="row">
+
+    <div class="col-sm-12 col-md-6">
+
+        <h2 class="thumbnail-title">Suivre les activités réalisées - Indemnisation - Performance</h2>
+        <div class="thumbnail">
+          <div class="thumbnail thumbnail-rose">
             <div class="caption">
-              <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>IOP</u></strong></a>
+              <strong>ICT7 - Taux de premiers paiements dans le délais</strong>
             </div>
-          </div>
-          <div class="row">
+            <div class="text-center"><span class="font-l"><u><strong>88%</strong></u></span><p>(Période: Mars 2019)</p></div>
             <div class="caption">
-              <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+              <button id="showHide13" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample13">
+                <strong class="text-capitalize">Indicateurs d'éclairage</strong><span class="icon-plus-circled" aria-hidden="true"></span>
+              </button>
             </div>
-          </div>
-          <div class="row">
-            <div class="caption">
-              <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+            <div class="collapse" id="collapseExample13">
+              <div class="row">
+                <div class="col-sm-4"><a href="css/gfx/ict7.png" target="_blank"><p><strong><u><span class="font-m">2j 10h 10mn</span></u></strong></p></a></div>
+                <div class="col-sm-4"><p><i>Données mars 2019</i></p></div>
+                <div class="col-sm-4"><p>Délai moyen de décision manuel entre l'inscription et la décision</p></div>
+              </div>
             </div>
-          </div>
-          <div class="row">
             <div class="caption">
-              <a href="#"><span class="icon-link" style="margin-right: 5px" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+              <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Accéder aux plans d'action</u></strong></a>
             </div>
           </div>
         </div>
-      </div>
+
+        <h2 class="thumbnail-title">Superviser les activités du jour - Rendez-vous programmés en temps réel</h2>
+        <div class="thumbnail">
+          <div class="thumbnail thumbnail-rose">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="caption">
+                  <strong>Personnes en attente</strong>
+                </div>
+                <div class="col-sm-6"><p><strong><span class="font-m">8</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">13:12</span></strong> <br />Attente moyenne</p></div>
+                <div class="caption text-center" >
+                  <button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="caption">
+                  <strong>Réalisation en cours</strong>
+                </div>
+                <div class="col-sm-6"><p><strong><span class="font-m">8</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">13:12</span></strong> <br />Attente moyenne</p></div>
+                <div class="caption text-center">
+                  <button class="btn transparent"><span class="icon-plus-circled lg-icon" aria-hidden="true"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="thumbnail-title">Liens utiles</h2>
+        <div class="thumbnail">
+          <div class="thumbnail-body">
+            <div class="row">
+              <div class="caption">
+                <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>IOP</u></strong></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="caption">
+                <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="caption">
+                <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="caption">
+                <a href="#"><span class="icon-link" aria-hidden="true"></span><strong><u>Lorem Ipsum</u></strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 </div>
