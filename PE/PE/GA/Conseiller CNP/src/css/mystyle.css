@@ -142,6 +142,15 @@ body {
   border-width: 2px;
   border-color: #fff;
 }
+.top-spacer {
+  margin-top: 30px;
+}
+.right-spacer {
+  margin-right: 15px;
+}
+.left-spacer {
+  margin-left: 15px;
+}
 .primary {
   color: #0072ed;
 }
