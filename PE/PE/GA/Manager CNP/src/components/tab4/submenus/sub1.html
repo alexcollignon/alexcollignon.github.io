@@ -5,6 +5,15 @@
   $("#showHide11").click(function(event) {
     $(this).find('span').toggleClass('icon-remove');
   });
+  $("#showHide14").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+  $("#showHide15").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
+  $("#showHide16").click(function(event) {
+    $(this).find('span').toggleClass('icon-remove');
+  });
 </script>
 <div class="tab-header"><h4><strong>Superviser les activités du jour<span style="color: #595959"> - Accueil physique et téléphonique</span></strong></h4></div>
 <div class="tab-body">
@@ -174,26 +183,44 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <p style="color: #595959; margin-bottom: 15px;"><strong>Rendez-vous programmés en temps réel</strong></p>
-          <div class="thumbnail" style="box-shadow: none; background: linear-gradient(320deg,#fce4ed,#ffe8cc)">
+        <div class="col-sm-12">
+          <p class="thumbnail-title"><strong>Rendez-vous programmés en temps réel</strong></p>
+          <div class="thumbnail thumbnail-rose">
             <div class="row">
-              <div class="col-sm-6 col-md-6">
+              <div class="col-sm-6">
                 <div class="caption">
                   <strong>Personnes en attente</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">15</span></strong> <br />Personnes en attente</p></div>
-                <div class="col-sm-6 col-md-6"><p style="border-right: 2px solid #fff"><strong><span style="font-size: 30px">3</span></strong> <br />Personnes non reçues dans les délais</p></div>
-                <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">15</span></strong> <br />Personnes en attente</p></div>
+                <div class="col-sm-6"><p style="border-right: 2px solid #fff"><strong><span class="font-m">3</span></strong> <br />Personnes non reçues dans les délais</p></div>
+                <div class="text-center">
+                  <button id="showHide15" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample15" aria-expanded="false" aria-controls="collapseExample15">
+                    <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
               </div>
-              <div class="col-sm-6 col-md-6">
+              <div class="col-sm-6">
                 <div class="caption">
                   <strong>Réalisation en cours</strong>
                 </div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">20</span></strong> <br />Rendez-vous en cours</p></div>
-                <div class="col-sm-6 col-md-6"><p><strong><span style="font-size: 30px">22</span></strong> <br />Rendez-vous programmez actuellement</p></div>
-                <div class="caption" style="text-align: center"><a href="#"><span class="icon-plus-circled lgIcon" aria-hidden="true"></span></a></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">20</span></strong> <br />Rendez-vous en cours</p></div>
+                <div class="col-sm-6"><p><strong><span class="font-m">22</span></strong> <br />Rendez-vous programmez actuellement</p></div>
+                <div class="text-center">
+                  <button id="showHide14" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample14">
+                    <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample14">
+            <div class="image-thumbnail">
+              <img src="css/gfx/superviser-accueil-2.png" alt="Données des réalisations en cours">
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample15">
+            <div class="image-thumbnail">
+              <img src="css/gfx/superviser-accueil-1.png" alt="Données des personnes en attente">
             </div>
           </div>
         </div>
@@ -271,7 +298,15 @@
           </div>
         </div>
         <div class="caption">
-          <strong>Performance</strong><span class="icon-plus-circled lgIcon" style="float: right" aria-hidden="true"></span>
+          <strong>Performance</strong>
+          <button id="showHide16" class="btn transparent" type="button" data-toggle="collapse" data-target="#collapseExample16" aria-expanded="false" aria-controls="collapseExample16">
+            <span class="icon-plus-circled lg-icon" aria-hidden="true"></span>
+          </button>
+          <div class="collapse" id="collapseExample16">
+            <div class="image-thumbnail">
+              <img src="css/gfx/superviser-accueil-performance.png" alt="Données de la performance">
+            </div>
+          </div>
         </div>
       </div>
       <div class="thumbnail" style="padding: 15px">

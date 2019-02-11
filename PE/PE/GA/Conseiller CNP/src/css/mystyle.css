@@ -57,6 +57,9 @@ body {
   border-radius: 8px;
   padding: 10px
 }
+.full-width {
+  width: 100%;
+}
 .float-right {
   float: right;
 }
@@ -112,6 +115,10 @@ body {
   box-shadow: none;
   background: linear-gradient(141deg, rgba(66,217,216,1) 0%, rgba(60,236,180,0.7413340336134453) 100%);
 }
+.thumbnail-grey {
+  box-shadow: none;
+  background-color: #F2F2F2
+}
 .image-thumbnail {
   padding: 5px;
   background-color: #fff;
@@ -140,6 +147,9 @@ body {
 }
 .secondary {
   color: #595959;
+}
+.white {
+  background-color: #fff;
 }
 .font-xxl {
   font-size: 4em;
@@ -194,6 +204,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.thbnlHeight {
+.thumbnail-height {
   height: 95%;
 }

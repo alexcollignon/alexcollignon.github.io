@@ -71,6 +71,18 @@ a, a:hover {
   display: inline-block;
   vertical-align: top
 }
+.transparent {
+  background-color: transparent;
+}
+.thumbnail-rose {
+  box-shadow: none;
+  background: linear-gradient(320deg,#fce4ed,#ffe8cc)
+}
+img {
+  margin-top: 15px;
+  width: 400px !important;
+  height: 25Opx !important;
+}
 .performance {
   text-align: center;
   box-shadow: none;
